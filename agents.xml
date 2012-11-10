@@ -1,0 +1,130 @@
+<useragentswitcher>
+	<folder description="Mobile devices">
+		<folder description="Apple">
+			<useragent description="iPhone 3.0" useragent="Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_0 like Mac OS X; en-us) AppleWebKit/528.18 (KHTML, like Gecko) Version/4.0 Mobile/7A341 Safari/528.16" appcodename="Mozilla" appname="Netscape" appversion="5.0 (iPhone; U; CPU iPhone OS 3_0 like Mac OS X; en-us) AppleWebKit/528.18 (KHTML, like Gecko) Version/4.0 Mobile/7A341 Safari/528.16" platform="iPhone" vendor="Apple Computer, Inc." vendorsub=""/>
+			<useragent description="iPod Touch" useragent="Mozilla/5.0 (iPod; U; CPU iPhone OS 3_1_1 like Mac OS X; en-us) AppleWebKit/528.18 (KHTML, like Gecko) Mobile/7C145" appcodename="Mozilla" appname="Netscape" appversion="5.0 (iPhone; U; CPU iPhone OS 3_0 like Mac OS X; en-us) AppleWebKit/528.18 (KHTML, like Gecko) Version/4.0 Mobile/7A341 Safari/528.16" platform="iPhone" vendor="Apple Computer, Inc." vendorsub=""/>
+		</folder>
+		<folder description="Blackberry">
+			<useragent description="Blackberry Bold (8300)" useragent="BlackBerry8300/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/107 UP.Link/6.2.3.15.0" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="Blackberry Curve (8320)" useragent="BlackBerry8320/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+		</folder>
+		<folder description="Google">
+			<useragent description="Android SDK (1.5)" useragent="Mozilla/5.0 (Linux; U; Android 1.5; en-us; sdk Build/CUPCAKE) AppleWebkit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="Nexus One (2.1)" useragent="Mozilla/5.0 (Linux; U; Android 2.1; en-us; Nexus One Build/ERD62) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+		</folder>
+		<folder description="HTC">
+			<useragent description="HTC Bahamas (1.5)" useragent="Mozilla/5.0 (Linux; U; Android 1.5; en-us; htc_bahamas Build/CRB17) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="HTC Hero (1.5)" useragent="Mozilla/5.0 (Linux; U; Android 1.5; en-us; HTC Hero Build/CUPCAKE) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="HTC Legend (2.1)" useragent="Mozilla/5.0 (Linux; U; Android 2.1; en-us; HTC Legend Build/cupcake) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="HTC Magic (1.5)" useragent="Mozilla/5.0 (Linux; U; Android 1.5; de-de; HTC Magic Build/PLAT-RC33) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1 FirePHP/0.3" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="HTC Tattoo (1.6)" useragent="Mozilla/5.0 (Linux; U; Android 1.6; en-us; HTC_TATTOO_A3288 Build/DRC79) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			</folder>
+		<folder description="LG">
+			<useragent description="LG Viewty" useragent="LG-GC900/V10a Obigo/WAP2.0 Profile/MIDP-2.1 Configuration/CLDC-1.1" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+		</folder>
+		<folder description="MDA - T-Mobile">
+			<useragent description="MDA Pro" useragent="Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; MDA Pro/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1)" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="T-Mobile G1 (1.0)" useragent="Mozilla/5.0 (Linux; U; Android 1.0; en-us; dream) AppleWebKit/525.10+ (KHTML, like Gecko) Version/3.0.4 Mobile Safari/523.12.2" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="T-Mobile G1 (1.5)" useragent="Mozilla/5.0 (Linux; U; Android 1.5; en-us; T-Mobile G1 Build/CRB43) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="T-Mobile G2 (1.5)" useragent="Mozilla/5.0 (Linux; U; Android 1.5; en-gb; T-Mobile_G2_Touch Build/CUPCAKE) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+		</folder>
+		<folder description="Motorla">
+			<useragent description="Motorola L7" useragent="MOT-L7v/08.B7.5DR MIB/2.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Link/6.3.0.0.0" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="Motorola RIZR" useragent="MOTORIZR-Z8/46.00.00 Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; 356) Opera 8.65 [it] UP.Link/6.3.0.0.0" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="Motorola V177" useragent="MOT-V177/0.1.75 UP.Browser/6.2.3.9.c.12 (GUI) MMP/2.0 UP.Link/6.3.1.13.0" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="Motorola Milestone (2.0.1)" useragent="Mozilla/5.0 (Linux; U; Android 2.0.1; de-de; Milestone Build/SHOLS_U2_01.14.0) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="Motorola Droid (2.0)" useragent="Mozilla/5.0 (Linux; U; Android 2.0; en-us; Droid Build/ESD20) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+		</folder>
+		<folder description="Nokia">
+			<useragent description="Nokia 3230" useragent="Nokia3230/2.0 (5.0614.0) SymbianOS/7.0s Series60/2.1 Profile/MIDP-2.0 Configuration/CLDC-1.0" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="Nokia 5700" useragent="Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Nokia5700/3.27; Profile/MIDP-2.0 Configuration/CLDC-1.1) AppleWebKit/413 (KHTML, like Gecko) Safari/413" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="Nokia 6120 Classic" useragent="Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Nokia6120c/3.70; Profile/MIDP-2.0 Configuration/CLDC-1.1) AppleWebKit/413 (KHTML, like Gecko) Safari/413" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="Nokia 6230" useragent="Nokia6230/2.0 (04.44) Profile/MIDP-2.0 Configuration/CLDC-1.1" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="Nokia 6230i" useragent="Nokia6230i/2.0 (03.80) Profile/MIDP-2.0 Configuration/CLDC-1.1" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="Nokia 6630" useragent="Nokia6630/1.0 (2.39.15) SymbianOS/8.0 Series60/2.6 Profile/MIDP-2.0 Configuration/CLDC-1.1" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="Nokia E50" useragent="Mozilla/5.0 (SymbianOS/9.1; U; en-us) AppleWebKit/413 (KHTML, like Gecko) Safari/413 es50" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="Nokia E65" useragent="Mozilla/5.0 (SymbianOS/9.1; U; en-us) AppleWebKit/413 (KHTML, like Gecko) Safari/413 es65" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="Nokia E70" useragent="Mozilla/5.0 (SymbianOS/9.1; U; en-us) AppleWebKit/413 (KHTML, like Gecko) Safari/413 es70" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="Nokia N70" useragent="NokiaN70-1/5.0609.2.0.1 Series60/2.8 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Link/6.3.1.13.0" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="Nokia N73" useragent="Mozilla/5.0 (SymbianOS/9.1; U; en-us) AppleWebKit/413 (KHTML, like Gecko) Safari/413" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="Nokia N73 (Service)" useragent="NokiaN73-1/3.0649.0.0.1 Series60/3.0 Profile/MIDP2.0 Configuration/CLDC-1.1" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="Nokia N80" useragent="Mozilla/5.0 (SymbianOS/9.1; U; en-us) AppleWebKit/413 (KHTML, like Gecko) Safari/413" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="Nokia N93" useragent="Mozilla/5.0 (SymbianOS/9.1; U; de) AppleWebKit/413 (KHTML, like Gecko) Safari/413" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="Nokia N95" useragent="Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN95/10.0.018; Profile/MIDP-2.0 Configuration/CLDC-1.1) AppleWebKit/413 (KHTML, like Gecko) Safari/413 UP.Link/6.3.0.0.0" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="Nokia N97" useragent="Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaN97-1/10.0.012; Profile/MIDP-2.1 Configuration/CLDC-1.1; en-us) AppleWebKit/525 (KHTML, like Gecko) WicKed/7.1.12344" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+		</folder>
+		<folder description="Palm">
+			<useragent description="Pre" useragent="Mozilla/5.0 (webOS/1.0; U; en-US) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/1.0 Safari/525.27.1 Pre/1.0" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+		</folder>
+		<folder description="Samsung">
+			<useragent description="Samsung Galaxy (1.5)" useragent="Mozilla/5.0 (Linux; U; Android 1.5; de-de; Galaxy Build/CUPCAKE) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="Samsung Jet" useragent="SAMSUNG-S8000/S8000XXIF3 SHP/VPP/R5 Jasmine/1.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 FirePHP/0.3" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="Samsung Moment (1.5)" useragent="Mozilla/5.0 (Linux; U; Android 1.5; en-us; SPH-M900 Build/CUPCAKE) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="Samsung SGH X210 (WML)" useragent="SEC-SGHX210/1.0 UP.Link/6.3.1.13.0" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="Samsung Spica (1.5)" useragent="Mozilla/5.0 (Linux; U; Android 1.5; fr-fr; GT-I5700 Build/CUPCAKE) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="Samsung X820" useragent="SEC-SGHX820/1.0 NetFront/3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+		</folder>
+		<folder description="Sony Sericsson">
+			<useragent description="K310iv" useragent="SonyEricssonK310iv/R4DA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Link/6.3.1.13.0" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="K550i" useragent="SonyEricssonK550i/R1JD Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="K610i" useragent="SonyEricssonK610i/R1CB Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="K750i" useragent="SonyEricssonK750i/R1CA Browser/SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="K800i" useragent="SonyEricssonK800i/R1CB Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Link/6.3.0.0.0" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="K810i" useragent="SonyEricssonK810i/R1KG Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="S500i" useragent="SonyEricssonS500i/R6BC Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="Satio" useragent="Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 SonyEricssonP100/01; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="T68 (WML)" useragent="SonyEricssonT68/R201A" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="T100 (WML)" useragent="SonyEricssonT100/R101" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="T610" useragent="SonyEricssonT610/R201 Profile/MIDP-1.0 Configuration/CLDC-1.0" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="T650i" useragent="SonyEricssonT650i/R7AA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="W580i" useragent="SonyEricssonW580i/R6BC Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="W660i" useragent="SonyEricssonW660i/R6AD Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="W810i" useragent="SonyEricssonW810i/R4EA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Link/6.3.0.0.0" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="W850i" useragent="SonyEricssonW850i/R1ED Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="W950i" useragent="SonyEricssonW950i/R100 Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; 323) Opera 8.60 [en-US]" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="W995" useragent="SonyEricssonW995/R1EA Profile/MIDP-2.1 Configuration/CLDC-1.1 UNTRUSTED/1.0" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="X10i (1.6)" useragent="Mozilla/5.0 (Linux; U; Android 1.6; en-us; SonyEricssonX10i Build/R1AA056) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="Xperia X1" useragent="Opera/9.5 (Microsoft Windows; PPC; Opera Mobi; U) SonyEricssonX1i/R2AA Profile/MIDP-2.0 Configuration/CLDC-1.1" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="Z800i" useragent="SonyEricssonZ800/R1Y Browser/SEMC-Browser/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Link/6.3.0.0.0" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+		</folder>
+	</folder>
+	<folder description="Mobile browser">
+		<useragent description="Opera Mini 4.0" useragent="Opera/9.50 (J2ME/MIDP; Opera Mini/4.0.9800/209; U; de)" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+		<useragent description="Opera Mini 4.2" useragent="Opera/9.60 (J2ME/MIDP; Opera Mini/4.2.14320/554; U; cs) Presto/2.2.0" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+	</folder>
+	<folder description="Desktop Browser">
+		<folder description="Apple">
+			<useragent  description="Safari 3.0 v521 (Mac OSX)" useragent="Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en) AppleWebKit/521.25 (KHTML, like Gecko) Safari/521.24" appname="" appversion="" platform="" vendor=""  vendorsub=""/>
+		</folder>
+		<folder description="Google Chrome">
+			<useragent description="Chrome 3.0 (Windows XP)" useragent="Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/532.0 (KHTML, like Gecko) Chrome/3.0.195.1 Safari/532.0" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="Chrome 3.0 (Windows Vista)" useragent="Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US) AppleWebKit/532.0 (KHTML, like Gecko) Chrome/3.0.195.1 Safari/532.0" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="Chrome 3.0 (Windows 7)" useragent="Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/532.0 (KHTML, like Gecko) Chrome/3.0.195.1 Safari/532.0" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="Chrome 3.0 (Linux)" useragent="Mozilla/5.0 (X11; U; Linux i686; en-US) AppleWebKit/532.0 (KHTML, like Gecko) Chrome/3.0.195.1 Safari/532.0" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="Chrome 3.0 (Mac OS X)" useragent="Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_7; en-US) AppleWebKit/531.3 (KHTML, like Gecko) Chrome/3.0.192 Safari/531.3" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+		</folder>
+		<folder description="Internet Explorer">
+			<useragent description="Internet Explorer 6 (Windows XP)" useragent="Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 6.0)" appcodename="" appname="Microsoft Internet Explorer" appversion="4.0 (compatible; MSIE 6.0; Windows NT 5.1)" platform="Win32" vendor="" vendorsub=""/>
+			<useragent description="Internet Explorer 6 (Windows Vista)" useragent="Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)" appcodename="Mozilla" appname="Microsoft Internet Explorer" appversion="4.0 (compatible; MSIE 6.0; Windows NT 5.1)" platform="Win32" vendor="" vendorsub=""/>
+			<useragent description="Internet Explorer 7 (Windows XP)" useragent="Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)" appcodename="" appname="Microsoft Internet Explorer" appversion="4.0 (compatible; MSIE 7.0; Windows NT 6.0)" platform="Win32" vendor="" vendorsub=""/>
+			<useragent description="Internet Explorer 7 (Windows Vista)" useragent="Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)" appcodename="Mozilla" appname="Microsoft Internet Explorer" appversion="4.0 (compatible; MSIE 7.0; Windows NT 6.0)" platform="Win32" vendor="" vendorsub=""/>
+			<useragent description="Internet Explorer 8 (Windows Vista)" useragent="Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0)" appcodename="Mozilla" appname="Microsoft Internet Explorer" appversion="4.0 (compatible; MSIE 8.0; Windows NT 6.0)" platform="Win32" vendor="" vendorsub=""/>
+			<useragent description="Internet Explorer 8 (Windows 7)" useragent="Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)" appcodename="Mozilla" appname="Microsoft Internet Explorer" appversion="4.0 (compatible; MSIE 8.0; Windows NT 6.1)" platform="Win32" vendor="" vendorsub=""/>
+		</folder>
+		<folder description="Opera">
+			<useragent description="Opera 8.51 (Windows XP)" useragent="Opera/8.51 (Windows NT 5.1; U; en)" appcodename="" appname="Opera" appversion="8.51 (Windows NT 5.1; U; en)" platform="Win32" vendor="" vendorsub=""/>
+			<useragent description="Opera 8.51 (Windows Vista)" useragent="Opera/8.51 (Windows NT 6.0; U; en)" appcodename="" appname="Opera" appversion="8.51 (Windows NT 6.0; U; en)" platform="Win32" vendor="" vendorsub=""/>
+			<useragent description="Opera 9.2 (Windows XP)" useragent="Opera/9.20 (Windows NT 5.1; U; en)" appcodename="" appname="Opera" appversion="9.20 (Windows NT 5.1; U; en)" platform="Win32" vendor="" vendorsub=""/>
+			<useragent description="Opera 9.2 (Windows Vista)" useragent="Opera/9.20 (Windows NT 6.0; U; en)" appcodename="" appname="Opera" appversion="9.20 (Windows NT 6.0; U; en)" platform="Win32" vendor="" vendorsub=""/>
+		</folder>
+		<folder description="Search Robots and misc.">
+			<useragent description="Facebook" useragent="facebookscraper/1.0(+http://www.facebook.com/sharescraper_help.php)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="Google Toolbar 4.0 (Windows XP, Internet Explorer 6)" useragent="Mozilla/4.0 (compatible; GoogleToolbar 4.0.1019.5266-big; Windows XP 5.1; MSIE 6.0.2900.2180)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="Googlebot 2.1" useragent="Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="iTunes 4.2 (OS X 10.2)" useragent="iTunes/4.2 (Macintosh; U; PPC Mac OS X 10.2)" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="Msnbot 1.1" useragent="msnbot/1.1 (+http://search.msn.com/msnbot.htm)" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="Yahoo Slurp" useragent="Mozilla/5.0 (compatible; Yahoo! Slurp; http://help.yahoo.com/help/us/ysearch/slurp)" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+			<useragent description="Zune 2.0" useragent="Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; winfx; .NET CLR 1.1.4322; .NET CLR 2.0.50727; Zune 2.0) " appname="" appversion="" platform="" vendor="" vendorsub=""/>
+		</folder>
+	</folder>
+</useragentswitcher>
