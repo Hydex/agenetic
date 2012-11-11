@@ -24,6 +24,7 @@ class ga:
 
 	def setGA(self, population):
 		self.population = population
+		self.size = len(self.population)
 		temp = population[0]
 		self.inSize = temp["first_weights"].getHeight()
 		self.hiddenSize = temp["first_thresholds"].getHeight()
@@ -177,7 +178,7 @@ class ga:
 				while (beta > scores[selector]):
 					beta -= scores[selector]
 					selector = (selector + 1) % self.size
-				nextGen.append(pop[selector])
+				nextGen.append(self.population[selector])
 
 			# if we've grown the next generation to the maxpop size, then finish
 			if len(nextGen) >= self.size:

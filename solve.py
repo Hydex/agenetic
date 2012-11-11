@@ -116,7 +116,7 @@ for N in range(maxPops):
 				sols.append(sol)
 
 				# score the result and accumulate total fitness over all agents
-				fitness = ann.fitness(sol, correct)
+				fitness = Ann.ann.fitness(None, sol, correct)
 				scores[chromoNum] += fitness
 
 			else:
@@ -137,7 +137,7 @@ for N in range(maxPops):
 
 
 	# for each value in scores, select a new value based on the roulette wheel
-	oga.roulette(scores)
+	nextGen = oga.roulette(scores)
 
 
 	oga = ga.ga()
