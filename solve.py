@@ -29,37 +29,36 @@ def threshold(input, thresholds):
 maxPops = 100			## the maximum number of populations to breed before exiting
 popSize = 10			## the number of chromozomes in each population
 
-
-
+## Some data structures
 strings = {}
 userAgents = []
 
-## <cffile action="read" file="#GetDirectoryFromPath(GetCurrentTemplatePath())#/agents.txt" variable="agents">
+## load the demo data
 agents = open("agents.txt", "r")
 
 # setup the output values
 outputValues = ["desktop","robot","mobile","tablet"]
+
 
 # create a list of all tokens found in an agent string
 p = re.compile(r'"([^"]+)"')
 for agent in agents:
 	userAgentStr = p.findall(agent)
 
-	# <cfset correct = ArrayFind(outputValues, answer)>
-	
 	agentDetails = {}
 	agentDetails["string"] = userAgentStr[0]
 	agentDetails["type"] = userAgentStr[1]
+	agentDetails["tokens"] = tokenise(agentDetails["string"])
 	userAgents.append(agentDetails)
 
-	# break up the agent string and record the frequency of each term
-	tokens = tokenise(agentDetails["string"])
-	for token in tokens:
+	# analyse the frequency of each term
+	for token in agentDetails["tokens"]:
 		# print("token", token)
 		if token != '':
 			if token not in strings:
 				strings[token] = 0
 			strings[token] += 1
+
 
 
 # toremove = []
