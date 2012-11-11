@@ -6,16 +6,9 @@ class ga:
 		self.population = []
 		self.coeff_size = 0
 
-	def setGA(self, population):
-		self.population = population
-		temp = population[0]
-		self.inSize = temp["first_weights"].getHeight()
-		self.hiddenSize = temp["first_thresholds"].getHeight()
-		self.outSize = temp["second_weights"].getHeight()
-		self.coeff_size = (self.inSize * self.hiddenSize) + self.hiddenSize + (self.hiddenSize * self.outSize) + self.outSize
-
 	def seedGA(self, size, inSize, hiddenSize, outSize):
 		'Creates a new set of matrices for the neural network'
+		self.size = size
 		self.inSize = inSize
 		self.hiddenSize = hiddenSize
 		self.outSize = outSize
@@ -28,6 +21,14 @@ class ga:
 			matrices["second_weights"] = self.getWeights(hiddenSize, outSize)
 			matrices["second_thresholds"] = self.getThresholds(outSize)
 			self.population.append(matrices)
+
+	def setGA(self, population):
+		self.population = population
+		temp = population[0]
+		self.inSize = temp["first_weights"].getHeight()
+		self.hiddenSize = temp["first_thresholds"].getHeight()
+		self.outSize = temp["second_weights"].getHeight()
+		self.coeff_size = (self.inSize * self.hiddenSize) + self.hiddenSize + (self.hiddenSize * self.outSize) + self.outSize
 
 	def getWeights(self, width, height):
 		m = Matrix.Matrix()
@@ -147,3 +148,39 @@ class ga:
 							#print("Mutation in second threshold")
 			newPopulation.append(matrices)
 		self.population = newPopulation
+
+	def roulette(self, scores):
+		nextGen = []
+		selector = int(random.random() * self.size)
+		beta = 0.0
+		mw = max(scores)
+		for n in range(self.size):
+			pair = []
+
+			## no breeding, just fittest lives
+			if False:
+				for i in range(2):
+					beta += (random.random() * mw * 2.0)
+					while (beta > scores[selector]):
+						beta -= scores[selector]
+						selector = (selector + 1) % self.size
+
+					pair.append(selector)
+
+				## breed the pair
+				newCitizens = self.mateParents(pair[0], pair[1])
+				nextGen.extend(newCitizens)
+
+			# just random roulette wheel picker and append to next gen..
+			else:
+				beta += (random.random() * mw * 2.0)
+				while (beta > scores[selector]):
+					beta -= scores[selector]
+					selector = (selector + 1) % self.size
+				nextGen.append(pop[selector])
+
+			# if we've grown the next generation to the maxpop size, then finish
+			if len(nextGen) >= self.size:
+				break
+
+		return nextGen
