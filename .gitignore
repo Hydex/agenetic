@@ -1,6 +1,5 @@
 
 /__pycache__
-*.pyc
-*.pyc
-*.pyc
-/__pycache__
+/Ann.pyc
+/Matrix.pyc
+/ga.pyc
