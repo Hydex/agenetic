@@ -63,7 +63,7 @@ def fitnes(results):
 
 ## Some settings
 maxPops = 1000			## the maximum number of populations to breed before exiting
-popSize = 100			## the number of chromozomes in each population
+popSize = 10			## the number of chromozomes in each population
 
 debugEvery = 1 			## the number of iterations where debug info is written to screen
 
@@ -104,7 +104,7 @@ outputSize = len(outputValues)			## number of states == size of the output matri
 
 ## setup the level at which we'll assume the alogorithm has converged
 # successThreshold = popSize * len(userAgents) * 7.25
-successThreshold = popSize * len(userAgents) * 24
+successThreshold = len(userAgents) * 24
 
 
 print("searching across", len(userAgents), "user agent string")
@@ -137,8 +137,10 @@ for N in range(maxPops):
 	pop = oga.getPopulation()
 
 	# scores will hold the fitness for each particular chromozone
-	scores = [0 for p in pop]
-	sols   = []
+	scores 	= [0 for p in pop]
+	sols	= []
+	best	= 0
+	worst	= 0
 
 	# evaluate each chromozone
 	for chromoNum in range(len(pop)):
@@ -168,12 +170,18 @@ for N in range(maxPops):
 				## throw("answer #answer# not found in output variables (#correct#). Ensure the training data is correct")
 
 
+		# after testing every input example, if we have reached the threshold, we're done!
+		if scores[chromoNum] >= successThreshold-0.2:
+			print("we have convergence!!")
+			break
+
+
 	## Now we score the overall results...
-	allMarks = sum(scores)
+	# allMarks = sum(scores)
 	# TODO: replace with a list comprehension or reduce function
-	sumScores = [0 for s in scores]
-	for s in range(len(scores)-1):
-		sumScores[s+1] = sumScores[s] + scores[s]
+	# sumScores = [0 for s in scores]
+	# for s in range(len(scores)-1):
+	# 	sumScores[s+1] = sumScores[s] + scores[s]
 
 
 	# for each value in scores, select a new value based on the roulette wheel
@@ -182,20 +190,15 @@ for N in range(maxPops):
 	oga.setGA(nextGen)
 
 	if N < maxPops-1:
-		mutations = oga.mutatePopulation(nextGen, 0.1, 1)
+		mutations = oga.mutatePopulation(nextGen, 0.05, 1)
 	else:
 		mutations = []
 
 
 	## show some useful output
 	if N % debugEvery == 0:
-		print("Generation:", N, "TOTAL:", allMarks, mutations)
-		# print("Scores:", scores)
-
-
-	if allMarks > successThreshold-0.2:
-		print("we have convergence!!")
-		break
+		print("Generation:", N, "TOTAL:", sum(scores), mutations, "best:", max(scores), "worst:", min(scores))
+		print("Scores:", scores, "\n")
 
 
 
