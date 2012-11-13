@@ -54,6 +54,16 @@ class ann:
 		return acc4
 
 	def fitness(self, solution, correct):
+		score = 1
+		for ic in range(solution.getHeight()):
+			if solution.getElem(ic, 0) == 1 and ic == correct:
+				score *= 3
+			elif solution.getElem(ic, 0) == 0 and ic != correct:
+				score *= 2
+		return score
+
+
+	def fitness_01(self, solution, correct):
 		score = 0
 		badvals = 0
 		# evaluate the 'fitness' for the output.
