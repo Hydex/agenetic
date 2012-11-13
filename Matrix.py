@@ -56,6 +56,8 @@ class Matrix:
 		return self.width
 	def getHeight(self):
 		return self.height
+	def getData(self):
+		return self.values
 
 	def init(self, fillValue = 0):
 		for i in range(self.height):
