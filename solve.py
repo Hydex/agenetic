@@ -62,8 +62,10 @@ def fitnes(results):
 
 
 ## Some settings
-maxPops = 100			## the maximum number of populations to breed before exiting
-popSize = 10			## the number of chromozomes in each population
+maxPops = 1000			## the maximum number of populations to breed before exiting
+popSize = 100			## the number of chromozomes in each population
+
+debugEvery = 1 			## the number of iterations where debug info is written to screen
 
 ## Some data structures
 strings = {}
@@ -95,27 +97,37 @@ for agent in agents:
 			strings[token] += 1
 
 
-print("searching across", len(userAgents), "user agent string")
-
-
 inputValues = list(strings.keys())		## global list of tokens
 inputSize = len(inputValues)			## number of tokens == size of the input matrix of the aNN
 outputSize = len(outputValues)			## number of states == size of the output matrix of the aNN
 
 
 ## setup the level at which we'll assume the alogorithm has converged
-successThreshold = popSize * len(userAgents) * 7.25
+# successThreshold = popSize * len(userAgents) * 7.25
+successThreshold = popSize * len(userAgents) * 24
 
 
+print("searching across", len(userAgents), "user agent string")
 print("Sizes:")
-print(inputSize, popSize, outputSize)
-print("Success Threshold", successThreshold)
+print("Input Strings:", inputSize)
+print("Population size:", popSize)
+print("Output size:", outputSize)
+print("Success Threshold", successThreshold, "\n")
 
 
 ## initialise the GA
 oga = ga.ga()
-oga.seedGA(popSize, inputSize, popSize, outputSize)
+oga.seedGA(popSize, inputSize, 100, outputSize)
 
+if not oga.validate():
+	print("GA doesn't validate")
+	sys.exit()
+
+t = oga.getPopulation()[0]["first_weights"]
+print("First Weights:", t.getWidth(), "x", t.getHeight(), len(t.getData()[0]), len(t.getData()), oga.getInputSize(), oga.getHiddenSize())
+# print("First Weights:", oga.getPopulation()[0]["first_weights"].getWidth(), "x", oga.getPopulation()[0]["first_weights"].getHeight())
+# print("Seconds Weights:", oga.getPopulation()[0]["second_weights"].getWidth(), "x", oga.getPopulation()[0]["second_weights"].getHeight())
+# print("Seconds Weights:", oga.getPopulation()[0]["second_weights"].getWidth(), "x", oga.getPopulation()[0]["second_weights"].getHeight())
 
 ## run the analysis no more than maxPops times, if we converge, then we will
 ## break, however, this prevents it from running too long...
@@ -164,18 +176,22 @@ for N in range(maxPops):
 		sumScores[s+1] = sumScores[s] + scores[s]
 
 
-	print("Generation:", N, "TOTAL:", allMarks, len(scores))
-
-
 	# for each value in scores, select a new value based on the roulette wheel
 	nextGen = oga.roulette(scores)
-
-
 	oga = ga.ga()
 	oga.setGA(nextGen)
 
 	if N < maxPops-1:
-		oga.getNextPopulation(nextGen, 0.1, 1)
+		mutations = oga.mutatePopulation(nextGen, 0.1, 1)
+	else:
+		mutations = []
+
+
+	## show some useful output
+	if N % debugEvery == 0:
+		print("Generation:", N, "TOTAL:", allMarks, mutations)
+		# print("Scores:", scores)
+
 
 	if allMarks > successThreshold-0.2:
 		print("we have convergence!!")
