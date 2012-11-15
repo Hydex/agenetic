@@ -34,9 +34,11 @@ import ga, Matrix, Ann
 
 def tokenise(agent):
 	agent = agent.lower()
-	p = re.compile(r'[^A-Za-z1-9.]')
-	agent = p.sub(' ', agent)
-	tokens = agent.split(' ')
+	tokens = []
+
+	p = re.compile(r'[A-Za-z1-9](?:\.[A-Za-z1-9]+|[A-Za-z1-9]+)')
+	tokens = p.findall(agent)
+
 	return tokens
 
 
@@ -62,8 +64,9 @@ def fitnes(results):
 
 
 ## Some settings
-maxPops = 1000			## the maximum number of populations to breed before exiting
+maxPops = 500			## the maximum number of populations to breed before exiting
 popSize = 10			## the number of chromozomes in each population
+muationProb = 0.1 		## the chance that a population mutates.
 
 debugEvery = 1 			## the number of iterations where debug info is written to screen
 
@@ -104,7 +107,9 @@ outputSize = len(outputValues)			## number of states == size of the output matri
 
 ## setup the level at which we'll assume the alogorithm has converged
 # successThreshold = popSize * len(userAgents) * 7.25
-successThreshold = len(userAgents) * 24
+# successThreshold = len(userAgents) * 24
+userAgentsLen = len(userAgents)
+successThreshold = userAgentsLen * 40
 
 
 print("searching across", len(userAgents), "user agent string")
@@ -169,7 +174,6 @@ for N in range(maxPops):
 				sys.exit()
 				## throw("answer #answer# not found in output variables (#correct#). Ensure the training data is correct")
 
-
 		# after testing every input example, if we have reached the threshold, we're done!
 		if scores[chromoNum] >= successThreshold-0.2:
 			print("we have convergence!!")
@@ -190,7 +194,7 @@ for N in range(maxPops):
 	oga.setGA(nextGen)
 
 	if N < maxPops-1:
-		mutations = oga.mutatePopulation(nextGen, 0.05, 1)
+		mutations = oga.mutatePopulation(nextGen, muationProb, 1)
 	else:
 		mutations = []
 
@@ -202,10 +206,20 @@ for N in range(maxPops):
 
 
 
-# some rudimentary debug
-for x in range(popSize):
-	print(sols[x].renderT())
-	print(scores[x])
+	# some rudimentary debug
+	if N % 25 == 0:
+		for x in range(popSize):
+			for i in range(outputSize):
+				for agent in range(userAgentsLen):
+					solutionNum = (x * userAgentsLen) + agent
+					m = sols[solutionNum]
+					print("|", sep="", end=" ")
+					print(m.getElem(i, 0), sep="", end=" ")
+					print("|", end="")
+				print("")
+				# print(sols[x].renderT())
+			print(scores[x])
+
 sys.exit()
 
 

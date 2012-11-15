@@ -66,12 +66,10 @@ class Matrix:
 		return self
 
 	def randomFill(self, min, max):
-		lmin = min * 1000;
-		lmax = max * 1000;
 		for i in range(self.height):
 			row = [];
 			for j in range(self.width):
-				row.append(random.random()*(lmax-lmin)+lmin)
+				row.append(random.random()*(max-min)+min)
 			self.values.append(row)
 		return self
 	
@@ -127,7 +125,7 @@ class Matrix:
 		for i in range(self.height):
 			out += "| "
 			for j in range(self.width):
-				out += str(self.getElem(i, j))
+				out += "{:6.4f} ".format(self.getElem(i, j))
 			out += " |\n"
 		return out
 

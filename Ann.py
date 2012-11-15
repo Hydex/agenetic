@@ -54,12 +54,15 @@ class ann:
 		return acc4
 
 	def fitness(self, solution, correct):
-		score = 1
+		score = 0
 		for ic in range(solution.getHeight()):
 			if solution.getElem(ic, 0) == 1 and ic == correct:
-				score *= 3
+				score += 1
 			elif solution.getElem(ic, 0) == 0 and ic != correct:
-				score *= 2
+				score += 1
+		# if we get a max score (16) then quadruple it :)
+		if score == 4:
+			score = 40
 		return score
 
 
